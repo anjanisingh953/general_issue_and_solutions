@@ -25,3 +25,20 @@ Advance update operator
 5. $rename
 6. $unset
 7. $upsert
+
+
+// ==================================================
+Que. How to Set the path for mongodb in the windows environment variable
+
+Step1. Open Run (Win + R) → type sysdm.cpl → Enter.
+
+Step2. Go to Advanced → Click Environment Variables.
+
+Step3. Under System variables, find Path, select it, and click Edit.
+
+Step4. Click New and add: C:\Program Files\MongoDB\Server\6.0\bin
+(Replace 6.0 with your installed version.)
+
+Step5. Click OK and restart your PC.
+
+Now, try running: mongod --version (It's working now)
